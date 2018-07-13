@@ -4,7 +4,7 @@
 #define	FALSE	-1
 //#define	MSG_TEST
 
-int UART_OPEN(int, char*);
+int UART_Open(int, char*);
 void UART_Close();
 int UART_Init(int, int, int, int, int, int);
 int UART_Recv(int, char*, int);

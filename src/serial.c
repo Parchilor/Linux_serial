@@ -49,7 +49,7 @@ static int UART_Set(int fd,int speed,int flow_ctrl,int databits,int stopbits,int
 {
 	   
 	int   i;
-	int   status;
+//	int   status;
 	int   speed_arr[] = { B115200, B19200, B9600, B4800, B2400, B1200, B300};
 	int   name_arr[] = {115200,  19200,  9600,  4800,  2400,  1200,  300};
 	struct termios options;
@@ -160,7 +160,7 @@ static int UART_Set(int fd,int speed,int flow_ctrl,int databits,int stopbits,int
 
 int UART_Init(int fd, int speed,int flow_ctrl,int databits,int stopbits,int parity)
 {
-	int err;
+//	int err;
 
 	if (UART_Set(fd, speed, flow_ctrl, databits, stopbits, parity) == FALSE) {                                                         
 		return FALSE;
